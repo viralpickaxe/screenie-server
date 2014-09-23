@@ -23,7 +23,7 @@ app.set('view cache', false);
 swig.setDefaults({ cache: false });
 
 server.listen(port, function(){
-  console.log('listening on *:' + port);
+  console.log('Screenie server started on *:' + port);
 });
 
 app.get('/', function(req,res){
@@ -60,7 +60,7 @@ var getTime = function(){
 }
 
 var gracefulShutdown = function() {
-  console.log("Received kill signal, shutting down gracefully.");
+  console.log("Received kill signal, shutting down screenie gracefully.");
   server.close();
   console.log("Closed out remaining connections. Gracefully Shutting Down");
   process.exit();
