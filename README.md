@@ -31,7 +31,7 @@ To generate a screenshot from the browser you need to navigate (in your browser)
 
 ## Generate screenshot from api
 
-To generate a screenshot from the api, make a request to `POST /screenshot/`. The `Content-Type` should be set to `application/json` and the body should include a json object with the item `url` in it. As with the browser method you need to add the `http://` or `https://` infront.
+To generate a screenshot from the api, make a request to `POST /screenshot/`. The `Content-Type` should be set to `application/json` and the body should include a json object with the item `url` in it. As with the browser method you need to add the `http://` or `https://` infront. You can also add optional `width` and `height` items to customize the viewport size (Pass in a interger value to represent pixels).
 
     POST /screenshot HTTP/1.1
     Host: localhost:5000
@@ -39,6 +39,15 @@ To generate a screenshot from the api, make a request to `POST /screenshot/`. Th
     Cache-Control: no-cache
     
     {"url":"http://iamjamiedavies.com"}
+    
+    
+    
+    POST /screenshot HTTP/1.1
+    Host: localhost:5000
+    Content-Type: application/json
+    Cache-Control: no-cache
+    
+    {"url":"http://iamjamiedavies.com","width":600,"height":300}
     
 Successful response
 
