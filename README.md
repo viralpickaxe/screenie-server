@@ -1,6 +1,14 @@
 # screenie
 
-A node.js based self hosted web screenshot server
+A node.js based self hosted web screenshot server.
+
+So while working on [whatleads.to](http://whatleads.to) we ran into an issue. The problem was that we wanted to be able to show screenshots (images) of the aims that people were creating, so that we could put them on things like twitter cards.
+
+From looking around for a while all I could find, were some pretty bad APIs that were free, and some pretty awesome APIs that were very (very) expensive. So... I decided that I would build one.
+
+If you like it, or want to use it feel free to grab the code and deploy it on your servers :)
+
+This was built in 30 minutes during a GCSE Computer Science Lesson.
 
 ## Install
 
