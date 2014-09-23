@@ -9,7 +9,7 @@ $('.js-createscreenshot').on('submit',function(){
   var oldbtn = $btn.html();
   
   $url.prop('disabled',true);
-  $btn.html('Queuing').prop('disabled',true);
+  $btn.html('Q-ing').prop('disabled',true);
 
   $.ajax({
     type: "POST",
