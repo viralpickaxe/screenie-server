@@ -42,7 +42,7 @@ function notification_show(notification,type,time){
   var time = time || 3000;
 
   $notif.html(notification);
-  $notif.removeClass('success error').addClass(type).show('slide',{direction:'up'});
+  $notif.removeClass('success error').addClass(type).fadeIn();
   window.NotificationTimeout = setTimeout(function(){
     notification_hide();
   },time);
@@ -51,7 +51,7 @@ function notification_show(notification,type,time){
 function notification_hide(){
   var $notif = $('.notification');
 
-  $notif.hide('slide',{direction:'up'},function(){
+  $notif.fadeOut(function(){
     $notif.remove();
   });
 }

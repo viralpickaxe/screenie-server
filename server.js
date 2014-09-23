@@ -19,8 +19,8 @@ app.use(bodyParser.json());
 app.set('view engine', 'html');
 app.set('views', './views');
 
-app.set('view cache', false);
-swig.setDefaults({ cache: false });
+// app.set('view cache', false);
+// swig.setDefaults({ cache: false });
 
 server.listen(port, function(){
   console.log('Screenie server started on *:' + port);
