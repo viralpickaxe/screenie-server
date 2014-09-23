@@ -1,6 +1,6 @@
 # screenie
 
-A node.js screenshot server/api
+A node.js based self hosted web screenshot server
 
 ## Install
 
