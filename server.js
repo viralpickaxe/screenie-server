@@ -32,10 +32,19 @@ app.get('/', function(req,res){
 
 app.post('/screenshot/', function(req,res){
   var url = req.param('url');
+  var settings = {};
+
+  if(typeof(req.param('width'))!='undefined'){
+    settings.width = req.param('width');
+  }
+  if(typeof(req.param('height'))!='undefined'){
+    settings.height = req.param('height');
+  }
+
   if(url!=''){
     var failed = false;
     var imgurl = '/screenshots/' + getTime() + '.png';
-    screenshot(url,'public' + imgurl).fail(function(err){
+    screenshot(url,'public' + imgurl,settings).fail(function(err){
       failed = true;
       res.send({success:false,msg:"Invalid URL"});
     }).done(function(){
