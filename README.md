@@ -35,7 +35,7 @@ If the server was started successfully you will see the following in the console
 
 To generate a screenshot from the browser you need to navigate (in your browser) to `http://localhost:5000` and yype in a url of a website that you would like to generate a screenshot for, then press generate. (Make sure that you include either `http://` or `https://` in the url).
 
-![Screenie Screenshot](http://new.tinygrab.com/9ad134d6aefd497e377aabe9a845f4c8e888ebbe14.png)
+![Screenie Screenshot](http://new.tinygrab.com/9ad134d6aef2fc4f7075222494615510e77a6a8df4.png)
 
 ## Generate screenshot from api
 
