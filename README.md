@@ -1,4 +1,4 @@
-# screenie
+# screenie server
 
 A node.js based self hosted web screenshot server.
 
