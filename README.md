@@ -2,7 +2,7 @@
 
 A node.js based self hosted web screenshot server.
 
-So while working on [whatleads.to](http://whatleads.to) we ran into an issue. The problem was that we wanted to be able to show screenshots (images) of the aims that people were creating, so that we could put them on things like twitter cards.
+So while working on [whatleads.to](http://whatleads.to) we ran into an issue. The problem was that we wanted to be able to show screenshots (images) of the big complex aims that people were creating, so that we could put them on things like twitter cards.
 
 From looking around for a while all I could find, were some pretty bad APIs that were free, and some pretty awesome APIs that were very (very) expensive. So... I decided that I would build one.
 
