@@ -6,9 +6,11 @@ So while working on [whatleads.to](http://whatleads.to) we ran into an issue. Th
 
 From looking around for a while all I could find, were some pretty bad APIs that were free, and some pretty awesome APIs that were very (very) expensive. So... I decided that I would build one.
 
-If you like it, or want to use it feel free to grab the code and deploy it on your servers :)
+If you like it, or want to use it feel free to grab the code and deploy it on your servers. I'm happy to keep on expanding this project, add issues for feature suggestions or submit a pull request. :)
 
 This was built in 30 minutes during a GCSE Computer Science Lesson.
+
+*I will be adding a link to a demo soon!*
 
 ## Install
 
@@ -30,12 +32,6 @@ If the server was started successfully you will see the following in the console
     Screenie server started on *:5000
     
 *Note: The port can be changed by feeding in the enviroment variable `PORT` on startup*
-
-## Generate screenshot from browser
-
-To generate a screenshot from the browser you need to navigate (in your browser) to `http://localhost:5000` and yype in a url of a website that you would like to generate a screenshot for, then press generate. (Make sure that you include either `http://` or `https://` in the url).
-
-![Screenie Screenshot](http://new.tinygrab.com/9ad134d6aef2fc4f7075222494615510e77a6a8df4.png)
 
 ## Generate screenshot from api
 
@@ -66,6 +62,13 @@ Failed response
     {"success":false,"msg":"Invalid URL"}
     
 The `imgurl` is the url that can be used to view the photo in browser, but the `screenshots` folder is actualy located in `public` (in the node project).
+
+## Generate screenshot from browser
+*This is mainly for testing the screenshot script*
+
+To generate a screenshot from the browser you need to navigate (in your browser) to `http://localhost:5000` and yype in a url of a website that you would like to generate a screenshot for, then press generate. (Make sure that you include either `http://` or `https://` in the url).
+
+![Screenie Screenshot](http://new.tinygrab.com/9ad134d6aef2fc4f7075222494615510e77a6a8df4.png)
 
 ## Dependancies
 
