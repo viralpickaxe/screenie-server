@@ -40,6 +40,15 @@ To generate a screenshot from the api, make a request to `POST /screenshot/`. Th
     
     {"url":"http://iamjamiedavies.com"}
     
+You can also add optional `width` and `height` items to customize the viewport size (Pass in a interger value to represent the amount of pixels).
+    
+    POST /screenshot HTTP/1.1
+    Host: localhost:5000
+    Content-Type: application/json
+    Cache-Control: no-cache
+    
+    {"url":"http://iamjamiedavies.com","width":600,"height":300}
+    
 Successful response
 
     {"success":true,"imgurl":"/screenshots/1411485285074.png"}
