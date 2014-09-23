@@ -1,0 +1,31 @@
+$blue : #0099FF;
+$white : #ffffff;
+$grey : #E5E5E5;
+$black : #303030;
+$green : #5AB55A;
+$red : #FF4747;
+$lime : #B8DA60;
+$orange : #FFA500;
+$purple : #C646C6;
+
+$grey_light : lighten($grey, 15%);
+$grey_dark : darken($grey, 15%);
+$grey_font : darken($grey, 30%);
+
+$blue_light : lighten($blue, 15%);
+$blue_dark : darken($blue, 15%);
+
+$green_light : lighten($green, 15%);
+$green_dark : darken($green, 15%);
+
+$red_light : lighten($red, 15%);
+$red_dark : darken($red, 15%);
+
+$lime_light : lighten($lime, 15%);
+$lime_dark : darken($lime, 15%);
+
+$orange_light : lighten($orange, 15%);
+$orange_dark : darken($orange, 15%);
+
+$purple_light : lighten($purple, 15%);
+$purple_dark : darken($purple, 15%);

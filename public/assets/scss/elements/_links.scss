@@ -1,0 +1,11 @@
+a {
+  @include transition(all, 0.2s, ease-in-out);
+  color: $blue;
+  border-bottom: 1px dotted $blue_light;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: $blue_light;
+    border-bottom: 0;
+  }
+}
