@@ -2,3 +2,4 @@
 config.codekit
 *.css.map
 node_modules
+public/screenshots
