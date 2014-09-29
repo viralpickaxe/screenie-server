@@ -1,7 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser')
 var http = require('http');
-var socket = require('socket.io');
 var path = require('path');
 var swig  = require('swig');
 var screenshot = require('url-to-image');
@@ -10,7 +9,6 @@ var port = Number(process.env.PORT || 5000);
 
 var app = express();
 var server = http.Server(app);
-var io = socket(server).listen(server);
 
 app.engine('html', swig.renderFile);
 
